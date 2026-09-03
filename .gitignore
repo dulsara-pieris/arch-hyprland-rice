@@ -3,7 +3,6 @@ bashrc
 BetterDiscord
 bleachbit
 browsh
-btop
 byobu
 cava
 cfg_backups
@@ -28,7 +27,6 @@ gtk-3.0
 gtk-4.0
 heroic
 htop
-hypr
 JetBrains
 kde-material-you-colors
 kdedefaults
@@ -120,3 +118,5 @@ baloofilerc
 zoom
 xdg-terminals.list
 Kingsoft
+hypr.backup-2026-09-03
+hypr.old
