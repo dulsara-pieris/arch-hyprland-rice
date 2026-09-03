@@ -1,0 +1,60 @@
+{
+	"layer": "top",
+	"spacing": 28,
+	"position": "top",
+	"margin-top": 20,
+	"output": [
+		"DP-1"
+	],
+	"modules-center": [
+		"clock",
+		"hyprland/workspaces",
+		"pulseaudio",
+		"memory"
+	],
+	"memory": {
+		"format": "RAM {used}G"
+	},
+	"clock": {
+		"interval": 60,
+		"format": "{:%I:%M}"
+	},
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"active-only": false,
+		"sort-by-number": true,
+		"persistent-workspaces": {
+			"1": [],
+			"2": [],
+			"3": [],
+			"4": [],
+			"5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": []
+		},
+		"format": "{icon}",
+		"format-icons": {
+			"1": "名",
+			"2": "誉",
+			"3": "を",
+			"4": "失",
+			"5": "う",
+			"6": "前",
+      "7": "に",
+      "8": "死",
+      "9": "ぬ"
+		},
+		"on-click": "activate"
+	},
+	"pulseaudio": {
+		"format": "♫ {volume}%",
+		"format-bluetooth": "{volume}% {icon}"
+		},
+		"scroll-step": 1,
+		"on-click": "pavucontrol",
+		"ignored-sinks": [
+			"Easy Effects Sink"
+		]
+	}

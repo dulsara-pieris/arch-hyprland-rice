@@ -1,0 +1,19 @@
+@define-color background #0b0f1a;
+@define-color background-alt #121a2a;
+
+@define-color foreground #d7e1ff;
+@define-color foreground-dim #8fa3c8;
+
+@define-color primary #7aa2f7;
+@define-color secondary #bb9af7;
+@define-color accent #7dcfff;
+
+@define-color pink #f7768e;
+@define-color green #9ece6a;
+@define-color yellow #e0af68;
+
+@define-color border #1f2a44;
+
+@define-color active #7aa2f7;
+@define-color inactive #5a6b8a;
+@define-color urgent #f7768e;

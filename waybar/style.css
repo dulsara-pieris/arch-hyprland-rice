@@ -1,0 +1,42 @@
+@import "colors.css";
+
+* {
+	all: unset;
+	font-family: "Fredoka", "JetBrainsMono Nerd Font";
+	transition: all .3s ease-in-out;
+}
+.modules-center {
+	background-color: @background-alt;
+	padding: 10px 20px;
+	border-radius: 20px;
+  border: 1px solid @pink;
+}
+#clock {
+	font-size: 30px;
+	font-weight: 900;
+	color: @pink;
+}
+#workspaces {
+	margin: 0 5px;
+  color: @green;
+}
+
+#workspaces button {
+  margin: 0 5px;
+  background-color: @background-alt;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#workspaces button.active {
+  background-color: @background;
+  border: solid 1px @pink;
+  padding: 5px 30px;
+}
+#pulseaudio {
+  color: @yellow;
+}
+#memory {
+	color: @accent;
+}
