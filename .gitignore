@@ -55,7 +55,6 @@ qalculate
 qt6ct
 qtengine
 ristretto
-rofi
 session
 sidepad
 spicetify
@@ -120,3 +119,5 @@ xdg-terminals.list
 Kingsoft
 hypr.backup-2026-09-03
 hypr.old
+nwg-displays
+background

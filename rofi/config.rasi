@@ -1,0 +1,312 @@
+
+/* =========================================================
+   CUTE MIDNIGHT — ROFI
+   Palette:
+   Black      #000000
+   Background #121a2a
+   Text       #d7e1ff
+   Dim        #8fa3c8
+   Blue       #7aa2f7
+   Purple     #bb9af7
+   Cyan       #7dcfff
+   Pink       #f7768e
+   Green      #9ece6a
+   Yellow     #e0af68
+   Border     #1f2a44
+========================================================= */
+
+configuration {
+    font: "Fredoka Medium 13";
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    background-color: transparent;
+    text-color: #d7e1ff;
+}
+
+
+/* =========================================================
+   WINDOW
+========================================================= */
+
+window {
+    location: center;
+    anchor: center;
+
+    width: 620px;
+    height: 430px;
+
+    background-color: #000000;
+
+    border: 2px;
+    border-color: #f7768e;
+    border-radius: 24px;
+
+    padding: 24px;
+}
+
+
+/* =========================================================
+   MAIN BOX
+========================================================= */
+
+mainbox {
+    orientation: vertical;
+    spacing: 18px;
+
+    background-color: #000000;
+}
+
+
+/* =========================================================
+   SEARCH BAR
+========================================================= */
+
+inputbar {
+    background-color: #121a2a;
+
+    border: 1px;
+    border-color: #1f2a44;
+    border-radius: 16px;
+
+    padding: 12px 16px;
+
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+
+    text-color: #f7768e;
+
+    padding: 0px 10px 0px 0px;
+}
+
+entry {
+    background-color: transparent;
+
+    text-color: #d7e1ff;
+    placeholder-color: #8fa3c8;
+}
+
+
+/* =========================================================
+   APP LIST
+========================================================= */
+
+listview {
+    columns: 1;
+    lines: 6;
+
+    fixed-height: true;
+
+    spacing: 8px;
+    scrollbar: false;
+
+    background-color: #000000;
+
+    padding: 2px;
+}
+
+
+/* =========================================================
+   APP ELEMENT BASE
+========================================================= */
+
+element {
+    orientation: horizontal;
+
+    padding: 10px 14px;
+
+    spacing: 12px;
+
+    border: 0px;
+    border-radius: 14px;
+
+    background-color: #000000;
+
+    text-color: #d7e1ff;
+}
+
+
+/* =========================================================
+   NORMAL ROWS
+========================================================= */
+
+element normal.normal {
+    background-color: #000000;
+    text-color: #d7e1ff;
+}
+
+
+/* =========================================================
+   ALTERNATING ROWS
+   Explicitly disabled
+========================================================= */
+
+element alternate.normal {
+    background-color: #000000;
+    text-color: #d7e1ff;
+}
+
+
+/* =========================================================
+   ACTIVE ROWS
+========================================================= */
+
+element normal.active {
+    background-color: #000000;
+    text-color: #d7e1ff;
+}
+
+element alternate.active {
+    background-color: #000000;
+    text-color: #d7e1ff;
+}
+
+
+/* =========================================================
+   URGENT ROWS
+========================================================= */
+
+element normal.urgent {
+    background-color: #000000;
+    text-color: #d7e1ff;
+}
+
+element alternate.urgent {
+    background-color: #000000;
+    text-color: #d7e1ff;
+}
+
+
+/* =========================================================
+   SELECTED ROW
+========================================================= */
+
+element selected.normal {
+    background-color: #121a2a;
+
+    border: 1px;
+    border-color: #f7768e;
+    border-radius: 14px;
+
+    text-color: #f7768e;
+}
+
+element selected.active {
+    background-color: #121a2a;
+
+    border: 1px;
+    border-color: #f7768e;
+    border-radius: 14px;
+
+    text-color: #f7768e;
+}
+
+element selected.urgent {
+    background-color: #121a2a;
+
+    border: 1px;
+    border-color: #f7768e;
+    border-radius: 14px;
+
+    text-color: #f7768e;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+element-text {
+    background-color: transparent;
+
+    text-color: #d7e1ff;
+}
+
+element normal.normal element-text,
+element alternate.normal element-text,
+element normal.active element-text,
+element alternate.active element-text,
+element normal.urgent element-text,
+element alternate.urgent element-text {
+    background-color: transparent;
+
+    text-color: #d7e1ff;
+}
+
+element selected.normal element-text,
+element selected.active element-text,
+element selected.urgent element-text {
+    background-color: transparent;
+
+    text-color: #f7768e;
+}
+
+
+/* =========================================================
+   ICONS
+========================================================= */
+
+element-icon {
+    background-color: transparent;
+
+    size: 28px;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+scrollbar {
+    background-color: #000000;
+
+    width: 4px;
+}
+
+scrollbar handle {
+    background-color: #f7768e;
+
+    border-radius: 4px;
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+message {
+    background-color: #000000;
+
+    padding: 0px;
+}
+
+textbox {
+    background-color: transparent;
+
+    text-color: #8fa3c8;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+error-message {
+    background-color: #121a2a;
+
+    border: 1px;
+    border-color: #f7768e;
+    border-radius: 14px;
+
+    padding: 12px;
+
+    text-color: #d7e1ff;
+}
