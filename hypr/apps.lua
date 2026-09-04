@@ -7,6 +7,8 @@ local menu        = "rofi -show drun -show-icons"
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar")
+    hl.exec_cmd("awww-daemon")
+    hl.exec_cmd("sleep 0.5 && zsh ./.config/hypr/wall-start.sh")
 end)
 
 ---------------------
@@ -24,6 +26,7 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zsh ./.config/hypr/bg.sh"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
