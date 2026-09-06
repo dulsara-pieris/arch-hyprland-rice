@@ -2,13 +2,16 @@
 ----- DEFAULT ----------
 ------------------------
 local terminal    = "kitty"
-local fileManager = "dolphin"
+local fileManager = "nautilus"
 local menu        = "rofi -show drun -show-icons"
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar")
-    hl.exec_cmd("awww-daemon")
-    hl.exec_cmd("sleep 0.5 && zsh ./.config/hypr/wall-start.sh")
+        hl.exec_cmd("awww-daemon")
+        hl.exec_cmd("swaync")
+        hl.exec_cmd("sleep 0.5 && zsh ./.config/hypr/scripts/wall-start.sh")
+        hl.exec("wl-paste --type text --watch cliphist store")
+        hl.exec("wl-paste --type image --watch cliphist store")
 end)
 
 ---------------------
@@ -22,11 +25,26 @@ local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
-hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zsh ./.config/hypr/bg.sh"))
+
+-- MUSIC
+hl.bind(
+        "SUPER + SPACE",
+        hl.dsp.workspace.toggle_special("music")
+)
+
+-- BACKGROUND
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zsh ./.config/hypr/scripts/bg.sh"))
+hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("zsh ./.config/hypr/scripts/update-notify.sh"))
+
+-- CLIPBOARD
+hl.bind(
+        mainMod .. " + V",
+        hl.dsp.exec_cmd("cliphist list | rofi -dmenu | cliphist decode | wl-copy")
+)
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
@@ -67,3 +85,22 @@ hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = tr
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
+
+
+
+-- Window size
+hl.bind("ALT + LEFT",
+        hl.dsp.window.resize({ x = -10, y = 0, relative = true }),
+        { repeating = true })
+
+hl.bind("ALT + RIGHT",
+        hl.dsp.window.resize({ x = 10, y = 0, relative = true }),
+        { repeating = true })
+
+hl.bind("ALT + UP",
+        hl.dsp.window.resize({ x = 0, y = -10, relative = true }),
+        { repeating = true })
+
+hl.bind("ALT + DOWN",
+        hl.dsp.window.resize({ x = 0, y = 10, relative = true }),
+        { repeating = true })

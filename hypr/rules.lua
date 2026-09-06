@@ -19,10 +19,15 @@ hl.window_rule({
 	no_focus = true,
 })
 
+hl.workspace_rule({
+        workspace = "special:music",
+        on_created_empty = "kitty --class music-scratchpad --title Music -e musikcube",
+})
 hl.window_rule({
-	name = "move-hyprland-run",
-	match = { class = "hyprland-run" },
-
-	move = "20 monitor_h-120",
-	float = true,
+        match = {
+                class = "music-scratchpad",
+        },
+        float = true,
+        size = "80% 45%",
+        center = true,
 })

@@ -3,11 +3,11 @@ hl.config({
 		gaps_in = 25,
 		gaps_out = 30,
 
-		border_size = 1,
+		border_size = 2,
 col = {
         active_border = {
                 colors = {
-                        "rgba(ff1493ee)", -- DeepPink
+                        "#f7768e", -- DeepPink
                         "rgba(ff69b4ee)", -- HotPink
                 },
                 angle = 45
