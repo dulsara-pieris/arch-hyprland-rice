@@ -1,0 +1,12 @@
+[Unit]
+Description=USB device watcher for Hyprland
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/.config/hypr/scripts/usb-watch.sh
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
