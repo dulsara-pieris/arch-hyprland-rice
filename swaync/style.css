@@ -1,0 +1,88 @@
+/* =========================================================
+   BASE
+========================================================= */
+* {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+:root {
+    --bg: #12121af0;
+    --focus: #f7768e;
+}
+.notification {
+    background-color: var(--bg);
+    border: 2px solid var(--focus);
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+.notification-content {
+    font-family: "VictorMono Nerd Font";
+    margin-left: 1px;
+}
+.summary {
+    font-family: "VictorMono Nerd Font";
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5f5ff;
+    padding-left: 30px;
+}
+.body {
+    font-family: "VictorMono Nerd Font";
+    font-size: 14px;
+    color: #b8b8cc;
+    padding-left: 30px;
+}
+
+.notification-content:hover {
+    background-color: var(--bg);
+    border: none;
+}
+.notification-default-action:hover {
+    background-color: var(--bg);
+    border: none;
+}
+.notification-row {
+    border: none;
+}
+.close-button {
+    background: #ff7fbf;
+    color: #0b0b10;
+    border: none;
+    box-shadow: none;
+    position: relative;
+    top: 50%;
+}
+.notification .body-image {
+    padding: 8px;
+    margin: 8px;
+    border-radius: 12px;
+}
+/* =========================================================
+   NOTIFICATIONS
+========================================================= */
+
+/* =========================================================
+   NOTIFICATION TEXT
+========================================================= */
+
+/* =========================================================
+   NOTIFICATION ACTIONS
+========================================================= */
+
+/* =========================================================
+   GROUPS
+========================================================= */
+
+/* =========================================================
+   CONTROL CENTER
+========================================================= */
+
+/* =========================================================
+   WIDGETS
+========================================================= */
+
+/* =========================================================
+   MEDIA PLAYER
+========================================================= */
