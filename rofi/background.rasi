@@ -4,20 +4,30 @@ configuration {
 }
 
 * {
-        background: #050505;
-        surface: #0d0d10;
-        surface-hover: #16161b;
+        background: #241D27;
+        surface: #302532;
+        surface-hover: #3B3040;
 
-        foreground: #f5f5f7;
+        foreground: #FFF3E8;
+        foreground-dim: #D4C2CE;
 
-        accent: #ff79c6;
-        accent-soft: #ff79c625;
-        accent-border: #ff79c680;
+        accent: #E8A6C8;
+        accent-soft: #E8A6C825;
+        accent-border: #E8A6C880;
+
+        lavender: #CDB4E9;
+        blue: #A9D8F0;
+        mint: #B8DDBF;
+        peach: #F1B89D;
+        butter: #F3DFA5;
 
         transparent: #00000000;
 }
 
-/* Main window */
+
+/* =========================================================
+   MAIN WINDOW
+========================================================= */
 
 window {
         width: 78%;
@@ -32,7 +42,10 @@ window {
         padding: 0px;
 }
 
-/* Layout */
+
+/* =========================================================
+   LAYOUT
+========================================================= */
 
 mainbox {
         orientation: vertical;
@@ -46,7 +59,10 @@ mainbox {
         padding: 24px;
 }
 
-/* Wallpaper grid */
+
+/* =========================================================
+   WALLPAPER GRID
+========================================================= */
 
 listview {
         columns: 4;
@@ -61,7 +77,10 @@ listview {
         dynamic: true;
 }
 
-/* Cards */
+
+/* =========================================================
+   WALLPAPER CARDS
+========================================================= */
 
 element {
         orientation: vertical;
@@ -69,7 +88,7 @@ element {
         background-color: @surface;
 
         border: 1px;
-        border-color: #ffffff0a;
+        border-color: #E8A6C812;
         border-radius: 16px;
 
         padding: 7px;
@@ -85,7 +104,10 @@ element alternate {
         background-color: @surface;
 }
 
-/* Selected wallpaper */
+
+/* =========================================================
+   SELECTED WALLPAPER
+========================================================= */
 
 element selected {
         background-color: @accent-soft;
@@ -96,7 +118,10 @@ element selected {
         padding: 6px;
 }
 
-/* Images */
+
+/* =========================================================
+   IMAGES
+========================================================= */
 
 element-icon {
         size: 170px;
@@ -108,13 +133,19 @@ element-icon {
         horizontal-align: 0.5;
 }
 
-/* Hide filenames */
+
+/* =========================================================
+   HIDE FILENAMES
+========================================================= */
 
 element-text {
         enabled: false;
 }
 
-/* Scrollbar */
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
 
 scrollbar {
         width: 4px;

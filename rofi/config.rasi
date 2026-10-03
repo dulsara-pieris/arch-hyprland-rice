@@ -1,22 +1,24 @@
-
 /* =========================================================
-   CUTE MIDNIGHT — ROFI
+   SOFT MIDNIGHT ♡ — ROFI
+
    Palette:
-   Black      #000000
-   Background #121a2a
-   Text       #d7e1ff
-   Dim        #8fa3c8
-   Blue       #7aa2f7
-   Purple     #bb9af7
-   Cyan       #7dcfff
-   Pink       #f7768e
-   Green      #9ece6a
-   Yellow     #e0af68
-   Border     #1f2a44
+   Background  #241D27
+   Surface     #302532
+   Text        #FFF3E8
+   Dim         #D4C2CE
+   Pink        #E8A6C8
+   Lavender    #CDB4E9
+   Purple      #BDA7D9
+   Blue        #A9D8F0
+   Mint        #B8DDBF
+   Peach       #F1B89D
+   Butter      #F3DFA5
+   Border      #604D61
 ========================================================= */
 
 configuration {
     font: "Fredoka Medium 13";
+    prompt: "♡";
 }
 
 
@@ -26,7 +28,7 @@ configuration {
 
 * {
     background-color: transparent;
-    text-color: #d7e1ff;
+    text-color: #FFF3E8;
 }
 
 
@@ -41,10 +43,10 @@ window {
     width: 620px;
     height: 430px;
 
-    background-color: #000000;
+    background-color: #241D27;
 
     border: 2px;
-    border-color: #f7768e;
+    border-color: #E8A6C8;
     border-radius: 24px;
 
     padding: 24px;
@@ -59,7 +61,7 @@ mainbox {
     orientation: vertical;
     spacing: 18px;
 
-    background-color: #000000;
+    background-color: #241D27;
 }
 
 
@@ -68,10 +70,10 @@ mainbox {
 ========================================================= */
 
 inputbar {
-    background-color: #121a2a;
+    background-color: #302532;
 
     border: 1px;
-    border-color: #1f2a44;
+    border-color: #604D61;
     border-radius: 16px;
 
     padding: 12px 16px;
@@ -82,7 +84,7 @@ inputbar {
 prompt {
     background-color: transparent;
 
-    text-color: #f7768e;
+    text-color: #E8A6C8;
 
     padding: 0px 10px 0px 0px;
 }
@@ -90,8 +92,8 @@ prompt {
 entry {
     background-color: transparent;
 
-    text-color: #d7e1ff;
-    placeholder-color: #8fa3c8;
+    text-color: #FFF3E8;
+    placeholder-color: #D4C2CE;
 }
 
 
@@ -108,7 +110,7 @@ listview {
     spacing: 8px;
     scrollbar: false;
 
-    background-color: #000000;
+    background-color: #241D27;
 
     padding: 2px;
 }
@@ -128,9 +130,9 @@ element {
     border: 0px;
     border-radius: 14px;
 
-    background-color: #000000;
+    background-color: #241D27;
 
-    text-color: #d7e1ff;
+    text-color: #FFF3E8;
 }
 
 
@@ -139,19 +141,13 @@ element {
 ========================================================= */
 
 element normal.normal {
-    background-color: #000000;
-    text-color: #d7e1ff;
+    background-color: #241D27;
+    text-color: #FFF3E8;
 }
 
-
-/* =========================================================
-   ALTERNATING ROWS
-   Explicitly disabled
-========================================================= */
-
 element alternate.normal {
-    background-color: #000000;
-    text-color: #d7e1ff;
+    background-color: #241D27;
+    text-color: #FFF3E8;
 }
 
 
@@ -160,13 +156,13 @@ element alternate.normal {
 ========================================================= */
 
 element normal.active {
-    background-color: #000000;
-    text-color: #d7e1ff;
+    background-color: #241D27;
+    text-color: #FFF3E8;
 }
 
 element alternate.active {
-    background-color: #000000;
-    text-color: #d7e1ff;
+    background-color: #241D27;
+    text-color: #FFF3E8;
 }
 
 
@@ -175,13 +171,13 @@ element alternate.active {
 ========================================================= */
 
 element normal.urgent {
-    background-color: #000000;
-    text-color: #d7e1ff;
+    background-color: #241D27;
+    text-color: #FFF3E8;
 }
 
 element alternate.urgent {
-    background-color: #000000;
-    text-color: #d7e1ff;
+    background-color: #241D27;
+    text-color: #FFF3E8;
 }
 
 
@@ -190,33 +186,33 @@ element alternate.urgent {
 ========================================================= */
 
 element selected.normal {
-    background-color: #121a2a;
+    background-color: #302532;
 
     border: 1px;
-    border-color: #f7768e;
+    border-color: #E8A6C8;
     border-radius: 14px;
 
-    text-color: #f7768e;
+    text-color: #E8A6C8;
 }
 
 element selected.active {
-    background-color: #121a2a;
+    background-color: #302532;
 
     border: 1px;
-    border-color: #f7768e;
+    border-color: #E8A6C8;
     border-radius: 14px;
 
-    text-color: #f7768e;
+    text-color: #E8A6C8;
 }
 
 element selected.urgent {
-    background-color: #121a2a;
+    background-color: #302532;
 
     border: 1px;
-    border-color: #f7768e;
+    border-color: #E8A6C8;
     border-radius: 14px;
 
-    text-color: #f7768e;
+    text-color: #E8A6C8;
 }
 
 
@@ -227,7 +223,7 @@ element selected.urgent {
 element-text {
     background-color: transparent;
 
-    text-color: #d7e1ff;
+    text-color: #FFF3E8;
 }
 
 element normal.normal element-text,
@@ -238,7 +234,7 @@ element normal.urgent element-text,
 element alternate.urgent element-text {
     background-color: transparent;
 
-    text-color: #d7e1ff;
+    text-color: #FFF3E8;
 }
 
 element selected.normal element-text,
@@ -246,7 +242,7 @@ element selected.active element-text,
 element selected.urgent element-text {
     background-color: transparent;
 
-    text-color: #f7768e;
+    text-color: #E8A6C8;
 }
 
 
@@ -266,13 +262,13 @@ element-icon {
 ========================================================= */
 
 scrollbar {
-    background-color: #000000;
+    background-color: #241D27;
 
     width: 4px;
 }
 
 scrollbar handle {
-    background-color: #f7768e;
+    background-color: #E8A6C8;
 
     border-radius: 4px;
 }
@@ -283,7 +279,7 @@ scrollbar handle {
 ========================================================= */
 
 message {
-    background-color: #000000;
+    background-color: #241D27;
 
     padding: 0px;
 }
@@ -291,7 +287,7 @@ message {
 textbox {
     background-color: transparent;
 
-    text-color: #8fa3c8;
+    text-color: #D4C2CE;
 }
 
 
@@ -300,13 +296,13 @@ textbox {
 ========================================================= */
 
 error-message {
-    background-color: #121a2a;
+    background-color: #302532;
 
     border: 1px;
-    border-color: #f7768e;
+    border-color: #E8A6C8;
     border-radius: 14px;
 
     padding: 12px;
 
-    text-color: #d7e1ff;
+    text-color: #FFF3E8;
 }

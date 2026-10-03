@@ -6,32 +6,51 @@
     outline: none;
     box-shadow: none;
 }
+
 :root {
-    --bg: #12121af0;
-    --focus: #f7768e;
+    --bg: #241D27;
+    --bg-alt: #302532;
+
+    --pink: #e8a6c8;
+    --pink-bright: #e88fae;
+
+    --cream: #FFF3E8;
+    --muted: #D4C2CE;
+
+    --lavender: #C7B5F5;
+    --blue: #A9D8F0;
+    --mint: #B8DDBF;
+    --peach: #F1B89D;
+    --butter: #F3DFA5;
+
+    --border: #e8a6c8;
 }
+
 .notification {
     background-color: var(--bg);
-    border: 2px solid var(--focus);
+    border: 2px solid var(--pink);
     border-radius: 16px;
     padding: 12px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
 }
+
 .notification-content {
     font-family: "VictorMono Nerd Font";
     margin-left: 1px;
 }
+
 .summary {
     font-family: "VictorMono Nerd Font";
     font-size: 16px;
     font-weight: bold;
-    color: #f5f5ff;
+    color: var(--cream);
     padding-left: 30px;
 }
+
 .body {
     font-family: "VictorMono Nerd Font";
     font-size: 14px;
-    color: #b8b8cc;
+    color: var(--muted);
     padding-left: 30px;
 }
 
@@ -39,26 +58,31 @@
     background-color: var(--bg);
     border: none;
 }
+
 .notification-default-action:hover {
     background-color: var(--bg);
     border: none;
 }
+
 .notification-row {
     border: none;
 }
+
 .close-button {
-    background: #ff7fbf;
-    color: #0b0b10;
+    background: var(--pink);
+    color: var(--bg);
     border: none;
     box-shadow: none;
     position: relative;
     top: 50%;
 }
+
 .notification .body-image {
     padding: 8px;
     margin: 8px;
     border-radius: 12px;
 }
+
 /* =========================================================
    NOTIFICATIONS
 ========================================================= */

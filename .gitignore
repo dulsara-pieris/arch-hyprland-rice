@@ -15,3 +15,7 @@
 !swaync/**
 !.gitignore
 !README.md
+!systemd/
+!systemd/**
+!fastfetch/
+!fastfetch/**

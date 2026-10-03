@@ -8,7 +8,9 @@ require("decoration")
 ---- ENVIRONMENT VARIABLES ----
 -------------------------------
 
+hl.env("XCURSOR_THEME", "catppuccin-macchiato-pink-cursors")
 hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_THEME", "catppuccin-macchiato-pink-cursors")
 hl.env("HYPRCURSOR_SIZE", "24")
 
 -----------------------
