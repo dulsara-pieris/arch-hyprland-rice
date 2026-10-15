@@ -4,6 +4,7 @@
 local terminal    = "kitty"
 local fileManager = "nautilus"
 local menu        = "rofi -show drun -show-icons"
+local calendar    = "gsimplecal"
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("waybar")
@@ -24,11 +25,12 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("hyprctl dispatch exit"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
+hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(calendar))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 
 -- MUSIC
@@ -40,6 +42,7 @@ hl.bind(
 -- BACKGROUND
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("zsh ./.config/hypr/scripts/bg.sh"))
 hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("zsh ./.config/hypr/scripts/update-notify.sh"))
+hl.bind("SUPER + L", hl.dsp.exec_cmd("pkill -x wlogout || wlogout"))
 
 -- CLIPBOARD
 hl.bind(

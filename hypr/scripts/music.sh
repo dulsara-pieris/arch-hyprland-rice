@@ -15,8 +15,9 @@ fi
 # Create the music TUI
 kitty \
         --class "$CLASS" \
-        --title "Music" \
-        -e musikcube &
+        --title "♥ Music" \
+        -o background_opacity=0.93 \
+        -e ncmpcpp &
 
 # Wait until the window actually exists
 while ! hyprctl clients -j | jq -e \

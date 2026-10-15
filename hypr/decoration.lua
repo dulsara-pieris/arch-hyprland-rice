@@ -7,12 +7,12 @@ hl.config({
 col = {
         active_border = {
                 colors = {
-                        "#f7768e", -- DeepPink
-                        "rgba(ff69b4ee)", -- HotPink
+                        "#E8A6C8",
+                        "#CDB4E9",
                 },
                 angle = 45
         },
-        inactive_border = "rgba(595959aa)",
+        inactive_border = "rgba(D4C2CEaa)",
 },
 
 		-- Set to true to enable resizing windows by clicking and dragging on borders and gaps
@@ -39,7 +39,7 @@ col = {
 		},
 		blur = {
 			enabled = true,
-			-- variant = "frost", TODO after feature comes to lts
+			-- variant = "frost", TODO after feature comes to lts 
 			-- if lucky drops :D
 			size = 3,
 			passes = 1,

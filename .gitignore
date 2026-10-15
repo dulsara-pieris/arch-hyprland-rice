@@ -13,6 +13,8 @@
 !waybar/**
 !swaync/
 !swaync/**
+!wlogout/
+!wlogout/**
 !.gitignore
 !README.md
 !systemd/

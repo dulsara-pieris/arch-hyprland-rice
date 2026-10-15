@@ -21,13 +21,14 @@ hl.window_rule({
 
 hl.workspace_rule({
         workspace = "special:music",
-        on_created_empty = "kitty --class music-scratchpad --title Music -e musikcube",
+        on_created_empty = "kitty --class music-scratchpad --title \"♥ Music\" -o background_opacity=0.93 -e ncmpcpp",
 })
+
 hl.window_rule({
         match = {
                 class = "music-scratchpad",
         },
         float = true,
-        size = "80% 45%",
+        size = "50% 40%",
         center = true,
 })

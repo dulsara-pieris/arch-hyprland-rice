@@ -10,7 +10,8 @@
 		"clock",
 		"hyprland/workspaces",
 		"pulseaudio",
-		"memory"
+		"memory",
+		"custom/calendar"
 	],
 	"memory": {
 		"format": "RAM {used}G"
@@ -47,6 +48,12 @@
       "9": "ぬ"
 		},
 		"on-click": "activate"
+	},
+	"custom/calendar": {
+		"format": "󰃭",
+		"tooltip": true,
+		"tooltip-format": "Open calendar",
+		"on-click": "waycal"
 	},
 	"pulseaudio": {
 		"format": "♫ {volume}%",

@@ -1,0 +1,53 @@
+/* =========================================================
+   SOFT MIDNIGHT ♡ — WLOGOUT
+   Matches rofi / kitty / swaync / hyprlock
+========================================================= */
+
+window {
+  font-family: "Fredoka", sans-serif;
+  font-size: 13pt;
+  color: #FFF3E8;
+  background-color: rgba(36, 29, 39, 0.93);
+}
+
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  border: none;
+  color: rgba(255, 243, 232, 0.45);
+  text-shadow: none;
+  border-radius: 20px;
+  background-color: rgba(36, 29, 39, 0.0);
+  margin: 5px;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: rgba(232, 166, 200, 0.14);
+  box-shadow: 0 0 0 1px rgba(232, 166, 200, 0.35), 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* LOCK */
+#lock { background-image: image(url("icons/lock.png")); background-size: 70%; }
+#lock:focus { background-image: image(url("icons/lock-hover.png")); background-color: rgba(232, 166, 200, 0.16); color: #E8A6C8; box-shadow: 0 0 0 2px rgba(232, 166, 200, 0.7), 0 4px 16px rgba(0, 0, 0, 0.5); }
+
+/* LOGOUT */
+#logout { background-image: image(url("icons/logout.png")); }
+#logout:focus { background-image: image(url("icons/logout-hover.png")); background-color: rgba(205, 180, 233, 0.14); color: #CDB4E9; box-shadow: 0 0 0 2px rgba(205, 180, 233, 0.7), 0 4px 16px rgba(0, 0, 0, 0.5); }
+
+/* HIBERNATE */
+#hibernate { background-image: image(url("icons/hibernate.png")); }
+#hibernate:focus { background-image: image(url("icons/hibernate-hover.png")); background-color: rgba(169, 216, 240, 0.14); color: #A9D8F0; box-shadow: 0 0 0 2px rgba(169, 216, 240, 0.7), 0 4px 16px rgba(0, 0, 0, 0.5); }
+
+/* SUSPEND */
+#suspend { background-image: image(url("icons/sleep.png")); }
+#suspend:focus { background-image: image(url("icons/sleep-hover.png")); background-color: rgba(184, 221, 191, 0.14); color: #B8DDBF; box-shadow: 0 0 0 2px rgba(184, 221, 191, 0.7), 0 4px 16px rgba(0, 0, 0, 0.5); }
+
+/* REBOOT */
+#reboot { background-image: image(url("icons/restart.png")); }
+#reboot:focus { background-image: image(url("icons/restart-hover.png")); background-color: rgba(243, 223, 165, 0.12); color: #F3DFA5; box-shadow: 0 0 0 2px rgba(243, 223, 165, 0.65), 0 4px 16px rgba(0, 0, 0, 0.5); }
+
+/* SHUTDOWN */
+#shutdown { background-image: image(url("icons/power.png")); }
+#shutdown:focus { background-image: image(url("icons/power-hover.png")); background-color: rgba(241, 184, 157, 0.14); color: #F1B89D; box-shadow: 0 0 0 2px rgba(241, 184, 157, 0.75), 0 4px 16px rgba(0, 0, 0, 0.5); }

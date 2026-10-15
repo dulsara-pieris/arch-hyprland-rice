@@ -73,8 +73,6 @@
     color: var(--bg);
     border: none;
     box-shadow: none;
-    position: relative;
-    top: 50%;
 }
 
 .notification .body-image {

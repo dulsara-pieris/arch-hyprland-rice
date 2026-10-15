@@ -5,38 +5,88 @@
 	font-family: "Fredoka", "JetBrainsMono Nerd Font";
 	transition: all .3s ease-in-out;
 }
+
+window {
+	all: unset;
+	font-family: "Fredoka", "JetBrainsMono Nerd Font";
+	background-color: transparent;
+}
+
 .modules-center {
-	background-color: @background-alt;
-	padding: 10px 20px;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: rgba(36, 29, 39, 0.94);
+	padding: 10px;
 	border-radius: 20px;
-  border: 1px solid @pink;
+	border: 1px solid #FFD9EC;
 }
+
 #clock {
-	font-size: 30px;
-	font-weight: 900;
-	color: @pink;
+	font-size: 28px;
+	font-weight: 600;
+	color: #FFD9EC;
+	background-color: rgba(232,166,200,0.20);
+	border: 1px solid rgba(232,166,200,0.55);
+	border-radius: 16px;
+	padding: 1px 18px;
+	margin: 0 8px;
+	text-shadow: 0 0 12px rgba(232,166,200,0.7);
+	
 }
+
 #workspaces {
-	margin: 0 5px;
-  color: @green;
+	margin: 0 8px;
+	color: #CDB4E9;
 }
 
 #workspaces button {
-  margin: 0 5px;
-  background-color: @background-alt;
-  border-radius: 10px;
-  padding: 5px;
-  font-size: 20px;
-  font-weight: 600;
+	margin: 0 4px;
+	color: #CDB4E9;
+	background-color: rgba(205,180,233,0.14);
+	border: 1px solid rgba(205,180,233,0.45);
+	border-radius: 12px;
+	padding: 3px 12px;
+	font-size: 18px;
+	font-weight: 600;
 }
+
+#workspaces button:hover {
+	color: #FFD9EC;
+	background-color: rgba(232,166,200,0.26);
+}
+
 #workspaces button.active {
-  background-color: @background;
-  border: solid 1px @pink;
-  padding: 5px 30px;
+	padding: 3px 28px;
+	text-shadow: none;
+	box-shadow: 0 0 8px rgba(232,166,200,0.8);
+    background-color: #E8A6C8;
+    border-color: #FFD9EC;
+	color: #241D27;
 }
+
 #pulseaudio {
-  color: @yellow;
+	color: #F3DFA5;
+	background-color: rgba(241,184,157,0.16);
+	border: 1px solid rgba(243,223,165,0.45);
+	border-radius: 14px;
+	padding: 1px 12px;
+	margin: 0 8px;
 }
+
 #memory {
-	color: @accent;
+	color: #CDB4E9;
+	background-color: rgba(205,180,233,0.16);
+	border: 1px solid rgba(205,180,233,0.45);
+	border-radius: 14px;
+	padding: 1px 12px;
+	margin: 0 8px;
+}
+#custom-calendar {
+    color: #e8a6c8;
+    background: rgba(205, 180, 233, 0.12);
+    border: 1px solid rgba(205, 180, 233, 0.35);
+    border-radius: 12px;
+    padding: 1px 15px;
+    margin: 0px;
 }
